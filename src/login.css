@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', ARIAL, sans-serif;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    color: #283593;
+    padding: 3px 0;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(40, 53, 147, 0.08);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.login-panel {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px rgba(40, 53, 147, 0.11);
+    padding: 40px 32px;
+    min-width: 320px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-panel h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #283593;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.login-panel p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #333;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #333;
+    display: block;
+    font-weight: 600;
+}
+
+.input-group input {
+    padding: 12px 0;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #f8fafc;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+.input-group input:focus {
+    border-color: #283593;
+    outline: none;
+}
+
+.login-btn {
+    padding: 12px 0;
+    background: #283593;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-weight: 600;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background: #283593;
+}
+
+.create-account {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.create-account p {
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 14px;
+}
+
+.create-btn {
+    padding: 10px 0;
+    width: 100%;
+    background: #e8eaf6;
+    color: #283593;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.create-btn:hover {
+    background: #c5cae9;
+}
+
+.create-account p {
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 14px;
+}
+
+
+.footer {
+    width: 100%;
+    background: #283593;
+    color: #fff;
+    padding: 18px 0;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(40, 53, 147, 0.06);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.footer-company {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-social {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s;
+}
+
+.social-icon:hover {
+    filter: brightness(0.9) invert(0.7) sepia(1) saturate(3) hue-rotate(200deg);
+}
