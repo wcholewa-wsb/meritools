@@ -5,21 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja Strona</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
-    <header>
-        <span>Header</span>
+    <header class="header">
+        <h1>MERITOOLS</h1>
     </header>
-
     <main>
-        <span>Content</span>
+        <div class="login-panel">
+            <h2>Witamy</h2>
+            <p>Zaloguj się do swojego konta w MERITOOLS</p>
+            <form>
+                <div class="input-group">
+                    <label for="email">Adres E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Hasło</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Zaloguj</button>
+            </form>
+            <div class="create-account">
+                <p>Nowy w MERITOOLS?</p>
+                <button class="create-btn">Zarejestru</button>
+            </div>
+        </div>
     </main>
-
-    <footer>
-        <p>Stopka</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-company">MERITOOLS</span>
+            <span class="footer-social">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="facebook-icon.svg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="instagram-com.svg" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="twitter-icon.svg" alt="Twitter" class="social-icon">
+                </a>
+            </span>
+        </div>
     </footer>
 </body>
 
