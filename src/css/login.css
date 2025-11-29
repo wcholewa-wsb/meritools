@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background: linear-gradient(180deg, #f6f8fc 0%, #f6f8fc 100%);
     min-height: 100vh;
     display: flex;
@@ -54,7 +54,6 @@ header {
     font-size: 1rem;
     display: flex;
     align-items: center;
-    gap: 4px;
 }
 
 .header-login span {
