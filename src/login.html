@@ -4,22 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Meritools - Logowanie</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
+
     <header>
-        <span>Header</span>
+        <div class="header-container">
+            <div class="logo-title">
+                <img src="images/logo-photo.png" alt="MERITOOLS logo" class="logo-img" style="height:32px;">
+                <span class="site-title">MERITOOLS</span>
+            </div>
+            <div class="header-links">
+                <a href="#" title="Koszyk" class="header-icon">&#128722;</a>
+                <a href="#" title="Login" class="header-login"><span>&#128100;</span> Login</a>
+            </div>
+        </div>
     </header>
+    <hr class="divider">
+
 
     <main>
-        <span>Content</span>
+        <div class="center-box">
+            <h2>Witamy</h2>
+            <p class="subtitle">Zaloguj się swojego konta w MERITOOLS</p>
+            <form>
+                <label for="email">Adres E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Hasło</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn-login">zaloguj</button>
+            </form>
+            <p class="new-account">Nowy w MERITOOLS?</p>
+            <button class="btn-register">zarejestruj</button>
+        </div>
     </main>
 
+
     <footer>
-        <p>Stopka</p>
+        <div class="footer-main">
+            <div class="logo-title footer-logo">
+                <img src="images/logo-photo.png" alt="MERITOOLS logo" class="logo-img" style="height:32px;">
+                <span class="site-title">MERITOOLS</span>
+            </div>
+            <div class="footer-columns">
+                <div>
+                    <h4>Informacje</h4>
+                    <ul>
+                        <li><a href="#">Nasza Historia</a></li>
+                        <li><a href="#">Regulamin sklepu</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>
+                        <li><a href="#">Skontaktuj się z nami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Obsługa Klienta</h4>
+                    <ul>
+                        <li><a href="#">Koszty i formy dostaw</a></li>
+                        <li><a href="#">Metody płatności</a></li>
+                        <li><a href="#">Gwarancja</a></li>
+                        <li><a href="#">Zwroty i reklamacje</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Twoje konto</h4>
+                    <ul>
+                        <li><a href="#">Zaloguj</a></li>
+                        <li><a href="#">Zarejestruj</a></li>
+                        <li><a href="#">Moje zamówienia</a></li>
+                        <li><a href="#">Ustawienia Konta</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Kontakt</h4>
+                    <ul class="footer-contact">
+                        <li>555-666-777</li>
+                        <li><span class="footer-icon">&#128205;</span> Domaniewska 15, Warszawa</li>
+                        <li><span class="footer-icon">&#9993;</span> support@meritools.com</li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                                alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                                alt="instagram" width="20" height="20">
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+                                alt="twitter" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 MERITOOLS. Wszelkie prawa zastrzeżone.
+        </div>
     </footer>
 </body>
 
