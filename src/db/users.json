@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "login": "wiktor_cholewa",
+    "email": "vicarycholewa@gmail.com",
+    "password": "asd",
+    "role": "ADMIN"
+  },
+  {
+    "id": 2,
+    "login": "anna_nowak",
+    "email": "anna@example.com",
+    "password": "pass123",
+    "role": "USER"
+  },
+  {
+    "id": 3,
+    "login": "tomek123",
+    "email": "tomek@example.com",
+    "password": "pass123",
+    "role": "USER"
+  },
+  {
+    "id": 4,
+    "login": "kasia",
+    "email": "kasia@example.com",
+    "password": "pass123",
+    "role": "USER"
+  },
+  {
+    "id": 5,
+    "login": "marek",
+    "email": "marek@example.com",
+    "password": "pass123",
+    "role": "USER"
+  },
+  {
+    "id": 6,
+    "login": "ola98",
+    "email": "ola@example.com",
+    "password": "pass123",
+    "role": "USER"
+  },
+  {
+    "id": 7,
+    "login": "bartek",
+    "email": "bartek@example.com",
+    "password": "pass123",
+    "role": "USER"
+  },
+  {
+    "id": 8,
+    "login": "monia",
+    "email": "monia@example.com",
+    "password": "pass123",
+    "role": "USER"
+  },
+  {
+    "id": 9,
+    "login": "piotr",
+    "email": "piotr@example.com",
+    "password": "pass123",
+    "role": "USER"
+  },
+  {
+    "id": 10,
+    "login": "zuzka",
+    "email": "zuzka@example.com",
+    "password": "pass123",
+    "role": "USER"
+  }
+]
