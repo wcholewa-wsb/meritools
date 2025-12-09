@@ -1,10 +1,17 @@
 [
   {
-    "id": 1,
-    "login": "wiktor_cholewa",
-    "email": "vicarycholewa@gmail.com",
+    "id": 0,
+    "login": "admin",
+    "email": "admin@gmail.com",
     "password": "asd",
     "role": "ADMIN"
+  },
+  {
+    "id": 1,
+    "login": "user",
+    "email": "user@gmail.com",
+    "password": "asd",
+    "role": "USER"
   },
   {
     "id": 2,

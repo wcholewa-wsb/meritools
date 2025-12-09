@@ -3,7 +3,7 @@ import {putError} from "./toast.js";
 
 function redirect() {
     putError("Nie posiadasz uprawnień do tej strony");
-    window.location.href = "login.html";
+    window.location.href = "home.html";
 }
 
 export function requireAdmin() {

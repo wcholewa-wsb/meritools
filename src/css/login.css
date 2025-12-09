@@ -7,60 +7,6 @@ body {
     flex-direction: column;
 }
 
-header {
-    background: #fff;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.header-container {
-    max-width: 1380px;
-    margin: 0 auto;
-    padding: 24px 32px 0 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.site-title {
-    color: #232359;
-    font-weight: 600;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-}
-
-.header-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.header-icon {
-    color: #232359;
-    font-size: 1.4rem;
-    text-decoration: none;
-}
-
-.header-login {
-    color: #232359;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.header-login span {
-    font-size: 1.2rem;
-}
-
 .divider {
     border: 0;
     background: #cdd1d6;
