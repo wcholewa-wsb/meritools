@@ -1,58 +1,61 @@
 # Projekt semestralny: MERITOOLS
 
-**1. Cel projektu**
+## 1. Cel projektu
 
-Celem projektu jest stworzenie sklepu internetowego **MERITOOLS** z narzędziami codziennego użytku. Aplikacja ma umożliwiać rejestrację i logowanie użytkowników oraz zapewniać dostęp do dwóch głównych modułów: panelu użytkownika (z koszykiem) oraz panelu administratora do zarządzania treścią.
+Celem projektu jest stworzenie sklepu internetowego **MERITOOLS** z narzędziami
+codziennego użytku. Aplikacja umożliwia rejestrację i logowanie użytkowników oraz
+zapewnia dostęp do panelu użytkownika (koszyk) i panelu administratora.
 
-**2. Uwierzytelnianie - logowanie i rejestracja**
+## 2. Uwierzytelnianie – logowanie i rejestracja
 
-* Stworzenie formularza rejestracji z podstawową walidacją danych (np. format e-mail, zgodność haseł, bez szyfrowania haseł).
-* Umożliwienie logowania na podstawie danych podanych podczas rejestracji.
-* Dane logowania, będą przechowywane w pliku JSON w formie czystego tekstu.
+- Stworzenie formularza rejestracji z podstawową walidacją danych
+  (np. format e-mail, zgodność haseł, bez szyfrowania haseł).
+- Logowanie na podstawie danych podanych podczas rejestracji.
+- Dane logowania przechowywane w pliku JSON w postaci czystego tekstu.
 
-**3. Panel użytkownika**
+## 3. Panel użytkownika
 
-Aplikacja będzie zawierać standardowe sekcje publiczne typu: Produkty, O nas, Kontakt oraz ważniejsze sekcje takie jak:
+Aplikacja zawiera sekcje publiczne: Produkty, O nas, Kontakt oraz:
 
-* **Katalog Produktów** - każdy produkt będzie posiadał zdjęcie, opis oraz cenę. Z tego poziomu użytkownik będzie mógł dodawać produkty do koszyka.
-* **Koszyk (tylko dla zalogowanych)** - zakładka wyświetlająca listę produktów użytkownika oraz łączną kwotę do zapłaty.
-* **Sesja** - dostępna będzie funkcja wylogowania użytkownika.
+- **Katalog produktów** – lista produktów ze zdjęciem, opisem i ceną oraz
+  możliwością dodania do koszyka.
+- **Koszyk (tylko dla zalogowanych)** – lista produktów i łączna kwota do zapłaty.
+- **Sesja** – możliwość wylogowania użytkownika.
 
-**4. Panel administratora**
+## 4. Panel administratora
 
-Użytkownik z uprawnieniami administratora otrzyma dostęp do dedykowanej sekcji zarządzania sklepem. Będzie tylko jedno konto administratora które będzie wcześniej zapisane w pliku JSON z danymi logowania.
+Administrator ma dostęp do dedykowanej sekcji zarządzania sklepem.
+Istnieje jedno konto administratora zapisane w pliku JSON.
 
-* **Zarządzanie produktami** - możliwość dodawania nowych produktów oraz ich usuwania.
-* **Przegląd użytkowników** - wgląd w listę wszystkich zarejestrowanych kont w systemie.
+- **Zarządzanie produktami** – dodawanie i usuwanie produktów.
+- **Przegląd użytkowników** – lista wszystkich kont w systemie.
 
-**5. Stos technologiczny i baza danych**
+## 5. Stos technologiczny i baza danych
 
-* **Frontend** - aplikacja zostanie zbudowana w oparciu o czysty HTML, CSS oraz JavaScript (Vanilla JS), wybrane ze względu na poziom doświadczenia w zespole.
-* **Baza danych** - funkcję bazy danych pełnić będą pliki JSON, przykładowo:
-    * `user-credentials.json` - przechowywanie danych logowania.
-    * `items.json` - przechowywanie produktów.
+- **Frontend** – HTML, CSS, JavaScript (Vanilla JS).
+- **Baza danych** – pliki JSON:
+  - `user-credentials.json` – dane logowania.
+  - `items.json` – dane produktów.
 
-**6. Zarządzanie projektem i narzędzia**
+## 6. Zarządzanie projektem i narzędzia
 
-* **Kontrola wersji** - repozytorium projektu jest prowadzone na platformie **GitHub**.
-* **Zarządzanie zadaniami** - Śledzenie postępów i przydział zadań (ticketing) odbywa się w **Jira**.
-* **Design** - wygląd strony tworzony jest w programie Figma.
+- **Kontrola wersji** – GitHub.
+- **Zarządzanie zadaniami** – Jira.
+- **Design** – Figma.
 
-**7. Role i odpowiedzialność w zespole**
+## 7. Role i odpowiedzialność w zespole
 
-* **Wiktor:**
-    * Zarządzanie zadaniami w Jira (tworzenie, przydział).
-    * Przeprowadzanie Code Review.
-    * Projektowanie architektury aplikacji i wsparcie merytoryczne.
-    * Implementacja bardziej złożonych funkcjonalności JavaScript.
-* **Michał:**
-    * W fazie początkowej projektowanie designu w programie Figma.
-    * Realizacja zadań przydzielonych w Jira.
-    * Prace programistyczne (HTML, CSS, JavaScript).
-* **Filip, Julian:**
-    * Realizacja zadań przydzielonych w Jira.
-    * Prace programistyczne (HTML, CSS, JavaScript).
-* **Kacper:**
-    * Stworzenie kompletnej architektury baz danych.
+- **Wiktor**
+  - Zarządzanie zadaniami w Jira.
+  - Code Review.
+  - Projekt architektury aplikacji.
+  - Implementacja złożonych funkcjonalności JavaScript.
+- **Michał**
+  - Projektowanie designu w Figma.
+  - Implementacja HTML, CSS, JavaScript.
+- **Filip, Julian**
+  - Implementacja HTML, CSS, JavaScript.
+- **Kacper**
+  - Projekt architektury baz danych.
 
 [Link do repozytorium](https://github.com/wcholewa-wsb/meritools)
