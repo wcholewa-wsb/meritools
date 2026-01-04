@@ -1,0 +1,12 @@
+name: Markdown checker
+on: [ push, pull_request ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+      - name: Check README.md
+        run: markdownlint README.md
