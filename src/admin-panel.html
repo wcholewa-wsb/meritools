@@ -6,9 +6,11 @@
     <title>Meritools</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin-panel.css">
     <script type="module" src="js/admin-panel.js"></script>
     <script type="module" src="js/shared.js"></script>
     <script type="module" src="js/toast.js"></script>
+
 </head>
 <body>
 
@@ -25,7 +27,77 @@
     <div id="auth-container">
     </div>
 </header>
+<main class="admin-container">
 
-Panel Administratora
+    <h1 class="page-title">Panel Administratora</h1>
+    <section class="card">
+        <h2>Zarządzanie produktami</h2>
+        <div class="form-grid">
+            <div>
+                <label>Nazwa produktu</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Cena</label>
+                <input type="number">
+            </div>
+            <div class="full">
+                <label>Opis</label>
+                <textarea></textarea>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn-primary">Dodaj produkt</button>
+            <button class="btn-secondary">Dodaj zdjęcie</button>
+        </div>
+        <h3 class="section-subtitle">Lista produktów</h3>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Nazwa produktu</th>
+                    <th>Data utworzenia</th>
+                    <th>Opis</th>
+                    <th>Status</th>
+                    <th>Cena</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produkt 1</td>
+                    <td>Pon, Sty 21, 2025</td>
+                    <td>Lekki, poręczny i bardzo skuteczny</td>
+                    <td><span class="status active">Aktywny</span></td>
+                    <td>$50</td>
+                    <td class="actions">
+                        <button class="icon edit">✏️</button>
+                        <button class="icon delete">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="card">
+        <h2>Zarządzanie użytkownikami</h2>
+
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Email użytkownika</th>
+                    <th>Data rejestracji</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>jan.kowalski@example.com</td>
+                    <td>Pon, Sty 21, 2025</td>
+                    <td><span class="status active">Aktywny</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
 </body>
 </html>
