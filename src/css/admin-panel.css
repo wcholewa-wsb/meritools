@@ -10,11 +10,11 @@
 }
 
 .card {
-    background: #ffffff;
+    background: #fff;
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 40px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .card h2 {
@@ -26,19 +26,33 @@
     margin-bottom: 10px;
 }
 
-.form-grid {
-    display: grid;
-    grid-template-columns: 10fr 1fr;
-    gap: 30px;
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.form-grid .full {
-    grid-column: 1 / -1;
+.form-row {
+    display: flex;
+    gap: 20px;
 }
 
-.form-grid input,
-.form-grid textarea {
-    width: 100%;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group.grow {
+    flex: 1;
+}
+
+.form-group.price {
+    width: 160px;
+}
+
+input,
+textarea {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #dcdcdc;
@@ -46,30 +60,53 @@
 }
 
 textarea {
-    min-height: 80px;
+    min-height: 90px;
+    resize: vertical;
 }
 
 .form-actions {
-    margin-top: 20px;
     display: flex;
+    align-items: center;
     gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .btn-primary {
     background: #2da3f7;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+    background: #1b8edc;
 }
 
 .btn-secondary {
     background: #f1f3f6;
+    color: #333;
     border: 1px solid #dcdcdc;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #e6e9ee;
+    border-color: #c0c0c0;
 }
 
 .admin-table {
@@ -79,16 +116,21 @@ textarea {
 }
 
 .admin-table th {
+    padding: 14px 10px;
     text-align: left;
     font-size: 13px;
     color: #666;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
 }
 
 .admin-table td {
     padding: 14px 10px;
     border-top: 1px solid #eee;
     font-size: 14px;
+}
+
+.admin-table tbody tr:hover {
+    background: #fafafa;
 }
 
 .status {
@@ -103,6 +145,11 @@ textarea {
     color: #2da36b;
 }
 
+.status.inactive {
+    background: #ffecec;
+    color: #e14b4b;
+}
+
 .actions {
     display: flex;
     gap: 8px;
@@ -113,6 +160,12 @@ textarea {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.icon:hover {
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .icon.edit {
@@ -121,4 +174,14 @@ textarea {
 
 .icon.delete {
     color: #e14b4b;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group.price {
+        width: 100%;
+    }
 }

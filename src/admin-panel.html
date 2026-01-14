@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meritools</title>
+    <title>Meritools – Panel administratora</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/admin-panel.css">
+    <link rel="stylesheet" href="css/toast.css">
+
     <script type="module" src="js/admin-panel.js"></script>
     <script type="module" src="js/shared.js"></script>
     <script type="module" src="js/toast.js"></script>
-
 </head>
 <body>
 
@@ -24,76 +25,82 @@
         </a>
     </div>
 
-    <div id="auth-container">
+    <div class="menu-right">
+        <a href="cart.html" class="cart-link">
+            <img src="images/cart.png" class="cart-icon" alt="Koszyk">
+        </a>
+
+        <div id="admin-container"></div>
+        <div id="auth-container"></div>
     </div>
 </header>
+
 <main class="admin-container">
 
     <h1 class="page-title">Panel Administratora</h1>
+
     <section class="card">
         <h2>Zarządzanie produktami</h2>
-        <div class="form-grid">
-            <div>
-                <label>Nazwa produktu</label>
-                <input type="text">
+
+        <form class="product-form">
+            <div class="form-row">
+                <div class="form-group grow">
+                    <label for="name">Nazwa produktu</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+
+                <div class="form-group price">
+                    <label for="price">Cena</label>
+                    <input id="price" name="price" type="number" min="0" step="0.01" required>
+                </div>
             </div>
-            <div>
-                <label>Cena</label>
-                <input type="number">
+
+            <div class="form-group">
+                <label for="description">Opis</label>
+                <textarea id="description" name="description"></textarea>
             </div>
-            <div class="full">
-                <label>Opis</label>
-                <textarea></textarea>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Dodaj produkt</button>
+
+                <div class="image-upload">
+                    <label for="image-input" class="btn btn-secondary">Wybierz zdjęcie</label>
+                    <input type="file" id="image-input" accept="image/*" style="display: none;">
+                </div>
+
+                <div id="image-preview" style="max-width: 50px; max-height: 50px;"></div>
             </div>
-        </div>
-        <div class="form-actions">
-            <button class="btn-primary">Dodaj produkt</button>
-            <button class="btn-secondary">Dodaj zdjęcie</button>
-        </div>
+        </form>
+
         <h3 class="section-subtitle">Lista produktów</h3>
-        <table class="admin-table">
+
+        <table class="admin-table products-table">
             <thead>
-                <tr>
-                    <th>Nazwa produktu</th>
-                    <th>Data utworzenia</th>
-                    <th>Opis</th>
-                    <th>Status</th>
-                    <th>Cena</th>
-                    <th>Akcje</th>
-                </tr>
+            <tr>
+                <th>Nazwa</th>
+                <th>Opis</th>
+                <th>Status</th>
+                <th>Cena</th>
+                <th>Akcje</th>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Produkt 1</td>
-                    <td>Pon, Sty 21, 2025</td>
-                    <td>Lekki, poręczny i bardzo skuteczny</td>
-                    <td><span class="status active">Aktywny</span></td>
-                    <td>$50</td>
-                    <td class="actions">
-                        <button class="icon edit">✏️</button>
-                        <button class="icon delete">🗑️</button>
-                    </td>
-                </tr>
             </tbody>
         </table>
     </section>
+
     <section class="card">
         <h2>Zarządzanie użytkownikami</h2>
-
-        <table class="admin-table">
+        <table class="admin-table users-table">
             <thead>
-                <tr>
-                    <th>Email użytkownika</th>
-                    <th>Data rejestracji</th>
-                    <th>Status</th>
-                </tr>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Login</th>
+                <th>Rola</th>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>jan.kowalski@example.com</td>
-                    <td>Pon, Sty 21, 2025</td>
-                    <td><span class="status active">Aktywny</span></td>
-                </tr>
             </tbody>
         </table>
     </section>
