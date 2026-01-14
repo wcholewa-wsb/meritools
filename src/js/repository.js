@@ -1,6 +1,6 @@
 import User from "./user.js";
 import Product from "./product.js";
-import {putSuccess, showError} from "./toast.js";
+import {showError, showSuccess} from "./toast.js";
 
 const USERS_KEY = "users";
 const PRODUCTS_KEY = "products";
@@ -42,8 +42,7 @@ export async function addUser(email, password) {
 }
 
 export async function getProducts() {
-    let products = JSON.parse(localStorage.getItem(PRODUCTS_KEY) || "null");
-
+    let products = JSON.parse(localStorage.getItem(PRODUCTS_KEY) || "null")
     if (!products) {
         const response = await fetch("./db/products.json");
         products = response.ok ? await response.json() : [];
@@ -52,3 +51,27 @@ export async function getProducts() {
 
     return products.map(p => new Product(p));
 }
+
+export async function saveProduct(product) {
+    if (!product.name || product.price == null) {
+        showError("Niepoprawne dane produktu");
+        return;
+    }
+
+    let products = JSON.parse(localStorage.getItem(PRODUCTS_KEY) || "[]");
+
+    const index = products.findIndex(p => String(p.id) === String(product.id));
+
+    if (index !== -1) {
+        products[index] = product;
+    } else {
+        product.id = Math.floor(Math.random() * 10000000);
+        products.push(product);
+    }
+
+    localStorage.setItem(PRODUCTS_KEY, JSON.stringify(products));
+    showSuccess("Produkt zapisany");
+
+    return product;
+}
+
