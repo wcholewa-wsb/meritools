@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERITOOLS - Najlepsze Narzędzia, Najlepsze Ceny</title>
+    <!-- zalaczam biblioteke tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* tutaj sa style wygladu strony */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        
+        /* wyglad glownego obrazka na gorze */
+        .hero-section {
+            background-image: url('https://placehold.co/1920x600/333333/ffffff?text=Lokalny+Sklep+Narzedziowy');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* uklad kafelkow z produktami */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        /* wyglad pojedynczej karty produktu */
+        .product-card {
+            padding: 15px;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* wyglad przycisku kupowania */
+        .simple-btn {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body class="text-black">
+
+    <!-- tutaj jest naglowek z menu -->
+    <header style="border-bottom: 2px solid black; padding: 10px;">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- użyj ścieżki relatywnej do pliku logo -->
+                <img src="./MainPageSrc/logo-photo.png" alt="MERITOOLS logo" class="logo-img" />
+                <div style="font-size: 24px; font-weight: bold;">MERITOOLS</div>
+            </div>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="#" style="color: black; text-decoration: underline;">Start</a>
+                <a href="#" style="color: black; text-decoration: underline;">Produkty</a>
+                <a href="#" style="color: black; text-decoration: underline;">Promocje</a>
+                <a href="#" style="color: black; text-decoration: underline;">Kontakt</a>
+            </div>
+
+            <div class="text-sm">
+                <a href="#" style="color: blue;">Login</a> | 
+                <a href="#" style="color: blue;">Rejestracja</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- sekcja z duzym napisem i tlem -->
+    <section class="hero-section" aria-hidden="false">
+        <img
+            src="./MainPageSrc/baner.jpg"
+            alt="Baner MERITOOLS"
+            class="banner-img"
+            onerror="if(!this._tried){this._tried=true;this.src='./MainPageSrc/baner.png';} else {this.src='./MainPageSrc/banner.jpg';}">
+    </section>
+
+    <!-- glowna czesc z lista produktow -->
+    <section class="py-10 px-4 max-w-7xl mx-auto">
+        <h2 style="font-size: 28px; border-bottom: 2px solid blue; display: inline-block; margin-bottom: 20px;">
+            Nasze Produkty
+        </h2>
+
+        <!-- tutaj skrypt wrzuci produkty z listy -->
+        <div class="product-grid" id="lista-produktow">
+            <!-- puste miejsce na start -->
+        </div>
+    </section>
+
+    <!-- stopka na samym dole strony -->
+    <footer class="bg-gray-800 text-white pt-10 pb-4 px-4 sm:px-8 mt-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-600 pb-8 mb-6">
+            
+            <!-- kolumna z logo i facebookiem -->
+            <div class="col-span-2 md:col-span-1">
+                <div class="text-2xl font-bold mb-4 flex items-center gap-2">
+                    <img src="./MainPageSrc/logo-photo.png" alt="MERITOOLS logo" style="width: 32px; height: 32px; object-fit: contain;">
+                    MERITOOLS
+                </div>
+            </div>
+
+            <!-- kolumna z linkami informacyjnymi -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase text-sm tracking-wider text-gray-300">Informacje</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Nasza Historia</a></li>
+                    <li><a href="#" class="hover:text-white">Regulamin sklepu</a></li>
+                    <li><a href="#" class="hover:text-white">Polityka prywatności</a></li>
+                    <li><a href="#" class="hover:text-white">Skontaktuj się z nami</a></li>
+                </ul>
+            </div>
+
+            <!-- kolumna obslugi klienta -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase text-sm tracking-wider text-gray-300">Obsługa Klienta</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Koszty i formy dostawy</a></li>
+                    <li><a href="#" class="hover:text-white">Metody płatności</a></li>
+                    <li><a href="#" class="hover:text-white">Gwarancje</a></li>
+                    <li><a href="#" class="hover:text-white">Zwroty i reklamacje</a></li>
+                </ul>
+            </div>
+
+            <!-- kolumna moje konto -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase text-sm tracking-wider text-gray-300">Twoje konto</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Zaloguj</a></li>
+                    <li><a href="#" class="hover:text-white">Koszyk / Zamówienia</a></li>
+                    <li><a href="#" class="hover:text-white">Twoje ustawienia</a></li>
+                </ul>
+            </div>
+
+            <!-- kolumna kontaktowa -->
+            <div>
+                <h4 class="font-semibold mb-3 uppercase text-sm tracking-wider text-gray-300">Kontakt</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li class="flex items-center gap-2">
+                        <span class="text-blue-400">Tel:</span> 555-666-777
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-blue-400">Adres:</span> Domaniewska 15, Wawa
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-blue-400">Email:</span> support@meritools.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-gray-500">
+            © 2024 MERITOOLS. Wszelkie prawa zastrzeżone.
+        </div>
+    </footer>
+
+    <!-- kod javascript do produktow -->
+    <script>
+        // lista produktów (kopiuj/pozostaw swoją jeśli już jest; tutaj dla kompletności)
+        const produkty = [
+            { nazwa: "Młotek", opis: "Niezbędny do wbijania gwoździ.", cena: "59.99 ZŁ", img: "Mlotek" },
+            { nazwa: "Śrubokręt", opis: "Lekki i poręczny.", cena: "39.99 ZŁ", img: "Srubokret" },
+            { nazwa: "Klucz Francuski", opis: "Trwały stop stali.", cena: "55.97 ZŁ", img: "KluczFrancuski" },
+            { nazwa: "Kombinerki", opis: "Do cięcia drutu.", cena: "79.00 ZŁ", img: "Kombinerki" },
+            { nazwa: "Miarka Zwijana", opis: "Do pomiarów.", cena: "69.95 ZŁ", img: "Miarka" },
+            { nazwa: "Nóż", opis: "Bardzo ostry.", cena: "119.94 ZŁ", img: "Noz" },
+            { nazwa: "Klucz Uniwersalny", opis: "Wielofunkcyjny.", cena: "139.95 ZŁ", img: "KluczUni" },
+            { nazwa: "Wiertarka", opis: "Akumulatorowa.", cena: "159.92 ZŁ", img: "Wiertarka" }
+        ];
+
+        const pudelko = document.getElementById('lista-produktow');
+        const baseFolder = './MainPageSrc/products/';
+
+        produkty.forEach(rzecz => {
+            const baseName = rzecz.img;
+            const placeholder = `https://placehold.co/400x300/e0e0e0/333?text=${encodeURIComponent(baseName)}`;
+
+            // lista możliwych ścieżek do sprawdzenia
+            const candidates = [
+                `${baseFolder}${baseName}.jpg`,
+                `${baseFolder}${baseName}.png`,
+                `${baseFolder}${baseName.replace(/\+/g,' ')}.jpg`,
+                `${baseFolder}${baseName.replace(/\+/g,' ')}.png`,
+                placeholder
+            ];
+
+            const card = document.createElement('div');
+            card.className = 'product-card';
+
+            const imgEl = document.createElement('img');
+            imgEl.alt = rzecz.nazwa;
+            imgEl.style.width = '100%';
+            imgEl.style.height = '200px';
+            imgEl.style.objectFit = 'cover';
+
+            // ustawiamy pierwsze źródło i w razie błędu przechodzimy po candidates
+            function tryNext() {
+                if (candidates.length === 0) return;
+                imgEl.src = candidates.shift();
+            }
+
+            imgEl.addEventListener('error', () => {
+                tryNext();
+            });
+
+            tryNext();
+
+            const info = document.createElement('div');
+            info.className = 'mt-2';
+            info.innerHTML = `
+                <h3 style="font-size: 18px; font-weight: bold; margin-top: 10px;">${rzecz.nazwa}</h3>
+                <p style="font-size: 14px; color: #666; margin-bottom: 5px;">${rzecz.opis}</p>
+                <p style="font-size: 20px; font-weight: bold; margin: 10px 0; color: #333;">${rzecz.cena}</p>
+                <button class="simple-btn">DO KOSZYKA</button>
+            `;
+
+            card.appendChild(imgEl);
+            card.appendChild(info);
+            pudelko.appendChild(card);
+        });
+    </script>
+</body>
+</html>
