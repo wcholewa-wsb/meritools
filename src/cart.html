@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script type="module" src="js/cart.js"></script>
     <script type="module" src="js/shared.js"></script>
 </head>
@@ -25,7 +27,159 @@
     <div id="auth-container">
     </div>
 </header>
+<hr class="divider">
 
-Koszyk
+<main class="checkout">
+    <h1>Podsumowanie zamówienia</h1>
+
+    <div class="checkout-grid">
+        <!-- LEWA KOLUMNA -->
+        <div class="checkout-left">
+
+            <section class="card">
+                <h3>Adres dostawy</h3>
+
+                <div class="form-grid">
+                    <div>
+                        <label>Imię</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Nazwisko</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <label>Email</label>
+                <input type="email">
+
+                <label>Telefon</label>
+                <input type="text">
+
+                <label>Ulica</label>
+                <input type="text">
+
+                <div class="form-grid">
+                    <div>
+                        <label>Miasto</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Kod pocztowy</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>Metoda płatności</h3>
+
+                <div class="option">Karta kredytowa</div>
+                <div class="option">Przelew bankowy</div>
+                <div class="option">PayPal</div>
+            </section>
+
+            <section class="card">
+                <h3>Dostawa</h3>
+
+                <div class="option">Dostawca A</div>
+                <div class="option">Dostawca B</div>
+                <div class="option">Dostawca C</div>
+                <button class="btn-submit">ZŁÓŻ ZAMÓWIENIE</button>
+            </section>
+            
+        </div>
+
+        <!-- PRAWA KOLUMNA -->
+        <aside class="checkout-right card">
+            <h3>Podsumowanie</h3>
+
+            <div class="summary-item">
+                <span>Młotek<br><small>Ilość: 1</small></span>
+                <span>19.99</span>
+            </div>
+
+            <div class="summary-item">
+                <span>Śrubokręt<br><small>Ilość: 1</small></span>
+                <span>39.98</span>
+            </div>
+
+            <hr>
+
+            <div class="summary-row">
+                <span>Razem produkty:</span>
+                <span>59.97</span>
+            </div>
+            <div class="summary-row">
+                <span>Dostawa:</span>
+                <span>10.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Podatek VAT:</span>
+                <span>4.80</span>
+            </div>
+
+            <div class="summary-total">
+                <span>RAZEM:</span>
+                <span>74.77 zł</span>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-main">
+        <div class="logo-title footer-logo">
+            <img src="images/logo-photo.png" alt="MERITOOLS logo" class="logo-img" style="height:32px;">
+            <span class="site-title">MERITOOLS</span>
+        </div>
+
+        <div class="footer-columns">
+            <div>
+                <h4>Informacje</h4>
+                <ul>
+                    <li><a href="#">Nasza Historia</a></li>
+                    <li><a href="#">Regulamin sklepu</a></li>
+                    <li><a href="#">Polityka prywatności</a></li>
+                    <li><a href="#">Skontaktuj się z nami</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Obsługa Klienta</h4>
+                <ul>
+                    <li><a href="#">Koszty i formy dostaw</a></li>
+                    <li><a href="#">Metody płatności</a></li>
+                    <li><a href="#">Gwarancja</a></li>
+                    <li><a href="#">Zwroty i reklamacje</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Twoje konto</h4>
+                <ul>
+                    <li><a href="login.html">Zaloguj</a></li>
+                    <li><a href="register.html">Zarejestruj</a></li>
+                    <li><a href="#">Moje zamówienia</a></li>
+                    <li><a href="#">Ustawienia Konta</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Kontakt</h4>
+                <ul class="footer-contact">
+                    <li>555-666-777</li>
+                    <li>Domaniewska 15, Warszawa</li>
+                    <li>support@meritools.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 MERITOOLS. Wszelkie prawa zastrzeżone.
+    </div>
+</footer>
 </body>
+
 </html>
