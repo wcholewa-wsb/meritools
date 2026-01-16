@@ -4,104 +4,71 @@
     "name": "Śrubokręt płaski",
     "description": "Śrubokręt płaski 6mm, stal chromowana",
     "price": 20,
-    "inStock": true
+    "inStock": true,
+    "image": "images/products/srubokret.jpg"
   },
   {
     "id": 2,
     "name": "Śrubokręt krzyżakowy",
     "description": "Śrubokręt krzyżakowy PH2, stal hartowana",
     "price": 25,
-    "inStock": true
+    "inStock": true,
+    "image": "images/products/srubokret.jpg"
   },
   {
     "id": 3,
     "name": "Wkrętarka akumulatorowa",
     "description": "Wkrętarka 12V, 2 akumulatory",
     "price": 350,
-    "inStock": true
+    "inStock": true,
+    "image": "images/products/wiertarka.jpg"
   },
   {
     "id": 4,
     "name": "Młotek ciesielski",
     "description": "Młotek 500g, rękojeść drewniana",
     "price": 50,
-    "inStock": true
+    "inStock": true,
+    "image": "images/products/mlotek.jpg"
   },
   {
     "id": 5,
     "name": "Klucz płaski 17mm",
     "description": "Klucz płaski 17mm, stal chromowana",
     "price": 30,
-    "inStock": true
+    "inStock": true,
+    "image": "images/products/kluczUni.jpg"
   },
   {
     "id": 6,
     "name": "Klucz nastawny",
     "description": "Klucz nastawny 150mm",
     "price": 45,
-    "inStock": true
+    "inStock": true,
+    "image": "images/products/kluczFrancuski.jpg"
   },
   {
     "id": 7,
     "name": "Szczypce uniwersalne",
     "description": "Szczypce 200mm, stal nierdzewna",
     "price": 40,
-    "inStock": true
-  },
-  {
-    "id": 8,
-    "name": "Pilnik metalowy",
-    "description": "Pilnik płaski 200mm",
-    "price": 15,
-    "inStock": true
+    "inStock": true,
+    "image": "images/products/kombinerki.jpg"
   },
   {
     "id": 9,
     "name": "Taśma miernicza 5m",
     "description": "Taśma stalowa 5m, obudowa plastikowa",
     "price": 25,
-    "inStock": true
-  },
-  {
-    "id": 10,
-    "name": "Poziomica 60cm",
-    "description": "Poziomica aluminiowa 60cm",
-    "price": 60,
-    "inStock": true
-  },
-  {
-    "id": 11,
-    "name": "Wkręty uniwersalne",
-    "description": "Zestaw 100 wkrętów 4x40mm",
-    "price": 20,
-    "inStock": true
+    "inStock": true,
+    "image": "images/products/miarka.jpg"
   },
   {
     "id": 12,
     "name": "Wiertarka elektryczna",
     "description": "Wiertarka 600W, 13mm uchwyt",
     "price": 280,
-    "inStock": false
-  },
-  {
-    "id": 13,
-    "name": "Piła ręczna",
-    "description": "Piła do drewna 500mm",
-    "price": 90,
-    "inStock": true
-  },
-  {
-    "id": 14,
-    "name": "Ściągacz izolacji",
-    "description": "Narzędzie do ściągania izolacji przewodów",
-    "price": 35,
-    "inStock": true
-  },
-  {
-    "id": 15,
-    "name": "Zestaw nasadek",
-    "description": "Zestaw 20 nasadek 1/4''",
-    "price": 120,
-    "inStock": true
+    "inStock": false,
+    "image": "images/products/wiertarka.jpg"
   }
 ]

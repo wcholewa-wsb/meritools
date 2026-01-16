@@ -30,9 +30,12 @@ header {
     font-weight: 700;
     color: #1F2E64;
     letter-spacing: 0.5px;
-    width: 250x;
     height: 15px;
     margin-left: 5px;
+}
+
+.admin-link {
+    margin-left: 10px;
 }
 
 .menu-right {
