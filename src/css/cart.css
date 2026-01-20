@@ -1,10 +1,10 @@
-
 .divider {
     border: 0;
-    background: #cdd1d6;
+    background: var(--light);
     width: 100%;
     margin-top: 12px;
 }
+
 .checkout {
     max-width: 1200px;
     margin: 0 auto 60px;
@@ -21,10 +21,11 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 32px;
-    align-items: stretch;
+    align-items: start;
 }
+
 .card-submit {
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 .card-submit .btn-submit {
@@ -32,7 +33,7 @@
 }
 
 .card {
-    background: #fff;
+    background: var(--white);
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.06);
@@ -47,7 +48,7 @@
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 20px;
 }
 
 .card label {
@@ -62,20 +63,34 @@
     padding: 10px 12px;
     border-radius: 6px;
     border: 1px solid #dcdfe6;
+    box-sizing: border-box; 
 }
 
 .option {
     border: 1px solid #dcdfe6;
     border-radius: 8px;
-    padding: 14px;
+    padding: 12px 16px;
     margin-bottom: 12px;
     cursor: pointer;
-    transition: border 0.2s, background 0.2s;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    font-weight: 500;
+    color: #333;
 }
 
 .option:hover {
     border-color: #1f8ef1;
     background: #f0f7ff;
+    color: #1f8ef1;
+}
+
+.option-icon {
+    width: 45px;          
+    height: 30px;         
+    object-fit: contain;  
+    flex-shrink: 0;       
 }
 
 .btn-submit {
@@ -88,6 +103,11 @@
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background: #1666cc;
 }
 
 .checkout-right .summary-item,
@@ -113,6 +133,10 @@
 
 @media (max-width: 900px) {
     .checkout-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-grid {
         grid-template-columns: 1fr;
     }
 }

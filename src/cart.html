@@ -32,12 +32,10 @@
     <h1>Podsumowanie zamówienia</h1>
 
     <div class="checkout-grid">
-        <!-- LEWA KOLUMNA -->
         <div class="checkout-left">
 
             <section class="card">
                 <h3>Adres dostawy</h3>
-
                 <div class="form-grid">
                     <div>
                         <label>Imię</label>
@@ -47,18 +45,18 @@
                         <label>Nazwisko</label>
                         <input type="text">
                     </div>
-                </div>
-
-                <label>Email</label>
-                <input type="email">
-
-                <label>Telefon</label>
-                <input type="text">
-
-                <label>Ulica</label>
-                <input type="text">
-
-                <div class="form-grid">
+                    <div>
+                         <label>Email</label>
+                         <input type="email">
+                    </div>  
+                    <div>
+                         <label>Telefon</label>
+                         <input type="text">
+                    </div>
+                    <div>
+                        <label>Ulica i numer domu</label>
+                        <input type="text">
+                    </div>
                     <div>
                         <label>Miasto</label>
                         <input type="text">
@@ -73,23 +71,43 @@
             <section class="card">
                 <h3>Metoda płatności</h3>
 
-                <div class="option">Karta kredytowa</div>
-                <div class="option">Przelew bankowy</div>
-                <div class="option">PayPal</div>
+                <div class="option">
+                    <img src="images/card.png" alt="Karta" class="option-icon">
+                    <span>Karta płatnicza </span>
+                </div>
+                <div class="option">
+                    <img src="images/BLIK.jpg" alt="BLIK" class="option-icon">
+                    <span>Szybki przelew (BLIK / PayU)</span>
+                </div>
+                <div class="option">
+                    <img src="images/PAYU.png" alt="PayPal" class="option-icon">
+                    <span>PayU</span>
+                </div>
             </section>
 
             <section class="card">
                 <h3>Dostawa</h3>
 
-                <div class="option">Dostawca A</div>
-                <div class="option">Dostawca B</div>
-                <div class="option">Dostawca C</div>
-                <button class="btn-submit">ZŁÓŻ ZAMÓWIENIE</button>
+                <div class="option">
+                    <img src="images/inpost.png" alt="InPost" class="option-icon">
+                    <span>Paczkomaty InPost 24/7</span>
+                </div>
+                <div class="option">
+                    <img src="images/dpd.png" alt="DPD" class="option-icon">
+                    <span>Kurier DPD</span>
+                </div>
+                <div class="option">
+                    <img src="images/dhl.png" alt="DHL" class="option-icon">
+                    <span>Kurier DHL Express</span>
+                </div>
+                
+                <div class="card-submit">
+                    <button class="btn-submit">ZŁÓŻ ZAMÓWIENIE</button>
+                </div>
             </section>
             
         </div>
 
-        <!-- PRAWA KOLUMNA -->
         <aside class="checkout-right card">
             <h3>Podsumowanie</h3>
 
@@ -180,5 +198,4 @@
     </div>
 </footer>
 </body>
-
 </html>
